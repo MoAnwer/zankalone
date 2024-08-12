@@ -1,0 +1,710 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+:root {
+  --main-color: #6c63ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #222;
+}
+
+section {
+  padding: 50px 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  position: relative;
+  color: var(--main-color);
+  font-size: 3em;
+  text-align: center;
+  transition: .3s all ease;
+}
+
+.heading h2 span {
+  opacity: 0;
+  font-family: sans-serif;
+  font-size: 40px;
+  transition: .3s all ease;
+}
+
+.heading h2:hover span {
+  opacity: 1;
+}
+
+.heading p {
+  text-transform: capitalize;
+  color: #444;
+  font-weight: 500;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+header {
+  padding: 1em;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container .bi-text-paragraph {
+  display: none;
+}
+
+.logo a {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--main-color);
+  transition: .3s all ease;
+}
+
+.logo a:hover {
+  color: white;
+}
+
+.logo a span {
+  color: white;
+}
+
+header nav .nav-links {
+  list-style: none;
+  display: flex;
+  place-content: center;
+  gap: 20px;
+}
+
+header nav .nav-links li {
+  padding: 5px;
+  font-weight: bold;
+}
+
+header nav .nav-links li a {
+  color: var(--main-color);
+  font-size: 15px;
+  font-weight: 500;
+  transition: .3s all ease;
+}
+
+header nav .nav-links li a:hover {
+  color: white;
+}
+
+#landing {
+  margin-top: 40px;
+  padding: 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#landing .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#landing .container .landing-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#landing .container .landing-text h3 {
+  font-size: x-large;
+  font-weight: 500;
+  color: white;
+}
+
+#landing .container .landing-text h1 {
+  font-size: 40px;
+  color: white;
+}
+
+#landing .container .landing-text h1 span {
+  color: var(--main-color);
+}
+
+#landing .container .landing-text a {
+  margin-top: 1em;
+  padding: .5em 1em;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s all ease;
+}
+
+#landing .container .landing-text a {
+  color: white;
+}
+
+#landing .container .landing-text a:hover {
+  color: var(--main-color);
+  background-color: white;
+}
+
+#landing .container img {
+  max-width: 500px;
+}
+
+/* landing */
+
+#About {
+  padding: 60px 0px;
+}
+
+#About .container {
+  padding: 80px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  place-items: center;
+  gap: 40px;
+}
+
+#About .img img {
+  width: 500px;
+}
+
+.container .about-me {
+  padding: 10px;
+}
+
+.container .about-me h2 {
+  font-weight: 600;
+  color: var(--main-color);
+  font-size: 2em;
+}
+
+.container .about-me p {
+  line-height: 1.8;
+  color: #777;
+  margin: 10px 0px 30px 0px;
+  text-transform: capitalize;
+}
+
+.contact {
+  background-color: var(--main-color);
+  padding: .8em 1em;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: .3s all ease;
+}
+
+.contact:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+
+/* Portfolio */
+
+#Portfolio .projects {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+#Portfolio .projects .project {
+  border-radius: 5px;
+  position: relative;
+  height: 350px;
+  background-color: #333;
+}
+
+#Portfolio .projects .project .project-img:hover img {
+  transform: scale(1.1);
+  filter: blur(.5);
+}
+
+#Portfolio .projects .project .project-img {
+  height: 43%;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+#Portfolio .projects .project .project-img img {
+  transition: .3s all ease;
+  width: 100%;
+}
+
+#Portfolio .projects .project .project-description {
+  padding: 10px 20px;
+}
+
+#Portfolio .projects .project .project-description .name {
+  color: #cfcece;
+  font-size: x-large;
+}
+
+#Portfolio .projects .project .project-description .description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+  text-transform: capitalize;
+}
+
+#Portfolio .projects .project .project-description .stars .bi-star-fill,
+.bi-star-half {
+  font-size: 13px;
+  color: yellow;
+
+}
+
+#Portfolio .projects .project .love {
+  padding: .5em;
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+  background-color: #444;
+  color: white;
+  width: 40px;
+  display: flex;
+  place-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: .3s all ease;
+}
+
+#Portfolio .projects .project .love:hover {
+  background-color: #555;
+}
+
+#Portfolio .projects .project .love.clicked {
+  color: #d63f3f;
+  background-color: white;
+}
+
+/* Services */
+
+#Services {
+  padding: 50px 0px;
+}
+
+.services {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.services .service {
+  position: relative;
+  padding: 5em 3em 1em 1em;
+  background-color: #333;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  transition: .3s all ease;
+}
+
+.services .service:hover {
+  background-color: var(--main-color);
+}
+
+.services .service:hover .service-description p {
+  color: white;
+}
+
+.services .service .icon {
+  padding: 10px 20px;
+  font-size: 2em;
+  color: var(--main-color);
+  background-color: var(--main-color);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.services .service .icon i {
+  color: white;
+}
+
+.services .service .service-description {
+  margin: -60px 0px 0px 0px;
+}
+
+.services .service .service-description h3 {
+  color: white;
+  font-size: 1.3em;
+}
+
+.services .service .service-description p {
+  line-height: 1.7;
+  margin-top: 30px;
+  color: #777;
+  font-size: 14px;
+  transition: .3s all ease;
+  text-transform: capitalize;
+}
+
+/* skills */
+#Skills {
+  padding: 50px 0px;
+}
+
+#Skills .container .skills {
+  margin-top: 10px;
+  padding: 40px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  align-items: center;
+  gap: 20px;
+}
+
+#Skills .container .skills .skills-progress {
+  display: flex;
+  flex-direction: column;
+}
+
+#Skills .container .skills .skills-progress .progress {
+  margin: 10px 0px;
+}
+
+.skills .skills-progress .progress .skill {
+  color: white;
+  font-size: 12px;
+}
+
+.skills .skills-progress .progress .skill-bar {
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 400px;
+  padding: 1px;
+  border-radius: 40px;
+  background-color: var(--main-color);
+}
+
+.skills .progress:nth-child(1) .skill-bar .progress-bar {
+  width: 340px;
+}
+
+.skills .progress:nth-child(2) .skill-bar .progress-bar {
+  width: 300px;
+}
+
+.skills .progress:nth-child(3) .skill-bar .progress-bar {
+  width: 320px;
+}
+
+.skills .progress:nth-child(4) .skill-bar .progress-bar {
+  width: 270px;
+}
+
+.skills .progress:nth-child(5) .skill-bar .progress-bar {
+  width: 230px;
+}
+
+.skills .progress:nth-child(6) .skill-bar .progress-bar {
+  width: 290px;
+}
+
+.skills .progress:nth-child(2) .progress-bar::after {
+  content: "84%";
+}
+
+.skills .progress:nth-child(3) .progress-bar::after {
+  content: "87%";
+}
+
+.skills .progress:nth-child(4) .progress-bar::after {
+  content: "77%";
+}
+
+.skills .progress:nth-child(5) .progress-bar::after {
+  content: "66%";
+}
+
+.skills .progress:nth-child(6) .progress-bar::after {
+  content: "80%";
+}
+
+.skills .progress .progress-bar {
+  width: 90%;
+  height: 5px;
+  display: inline-block;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+}
+
+.skills .progress .progress-bar::after {
+  content: "90%";
+  position: absolute;
+  right: -13px;
+  top: -35px;
+  font-size: 8px;
+  background-color: var(--main-color);
+  border-radius: 4px;
+  color: white;
+  padding: 5px;
+}
+
+.skills .progress .progress-bar::before {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: -13px;
+  border: 6px solid transparent;
+  border-color: var(--main-color) transparent transparent transparent;
+}
+
+/* Contact */
+
+#Contact .container {
+  margin-top: 40px;
+  display: flex;
+  place-content: center;
+}
+
+.container form input {
+  outline: none;
+  border: none;
+  padding: .5em 1em;
+  width: 300px;
+  border-radius: 2px;
+  margin: 5px 0px;
+  background-color: #444;
+  caret-color:   white;
+  color: white;
+}
+
+.container form textarea {
+  background-color: #444; 
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  padding: .3em 1em;
+  resize: none;
+  height: 300px;
+  width: 604px;
+  caret-color: white;
+  color: white;
+}
+
+.container form input::placeholder,
+.container form textarea::placeholder {
+  color: #999;
+}
+.container form button[type="submit"] {
+  display: block;
+  background-color: var(--main-color);
+  width: 100%;
+  padding: .4em;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .3s all ease;
+}
+
+.container form button[type="submit"]:hover {
+  color: var(--main-color);
+  background-color: white;
+}
+
+/* footer */
+
+footer {
+  margin-top: 2em;
+  padding: 2em;
+  background-color: #333;
+}
+
+footer .logo a {
+  font-size: 30px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container .social i {
+  color: white;
+  font-size: 20px;
+  padding: .3em 11px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: .3s all ease;
+}
+
+footer .container .social i:hover {
+  background-color: var(--main-color);
+}
+
+/* =================== media ====================  */
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  #About .img img {
+    width: 390px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 900px) {
+  .heading h2 {
+    font-size: 2.4em;
+  }
+
+  header {
+    padding: 1em;
+  }
+
+  header nav .nav-links {
+    margin-right: -300px;
+    flex-direction: column;
+    position: fixed;
+    align-items: flex-start;
+    right: 0px;
+    top: -145px;
+    background: #333;
+    height: 140vh;
+    padding: 10px 41px;
+    width: 280px;
+    z-index: 999;
+    transition: .3s all ease;
+  }
+
+  header .container nav {
+    text-align: center;
+  }
+
+  header .container nav .logo {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  header .container .bi-text-paragraph {
+    display: block;
+    color: var(--main-color);
+    font-size: x-large;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  #landing {
+    margin: 0;
+  }
+
+  #landing .container {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  #landing .container img {
+    max-width: 350px;
+  }
+
+  #landing .container .landing-text {
+    align-items: center;
+  }
+
+  #landing .container .landing-text h3 {
+    font-size: 20px;
+  }
+
+  #landing .container .landing-text h1 {
+    font-size: 26px;
+  }
+
+  #About .container {
+    display: block;
+  }
+
+  #About .img {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  .container .about-me {
+    margin: 0px 0px 0px 20px;
+  }
+
+  #Skills .container .skills .skills-progress {
+    width: fit-content;
+  }
+
+  #Skills .container .skills .skills-progress {
+    margin: 0 auto;
+    transform: scale(.7) !important;
+    margin: 0px -57px 0px;
+  }
+
+  #Contact .container {
+    display: block;
+  }
+
+  .container form textarea,
+  .container form input {
+    width: 100%;
+    margin: 5px 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  #About .img img {
+    width: 310px;
+  }
+
+  .container .about-me p {
+    text-align: justify;
+  }
+}
